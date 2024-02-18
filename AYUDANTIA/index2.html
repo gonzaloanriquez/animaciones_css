@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgperro{
+    filter: grayscale(0%);
+    transition: filter 1s ease; 
+    border-radius: 0%;
+}
+
+.imgperro:hover{
+    filter: grayscale(100%);
+    border-radius: 20px;
+}
+
+</style>
+
+<body>
+    <div class="container">
+        <img width="200px" class="imgperro" src="https://th.bing.com/th/id/OIP.8g6FehTGg-yPmtvGMiqvAQHaE7?rs=1&pid=ImgDetMain" alt="">
+    </div>
+</body>
+</html>

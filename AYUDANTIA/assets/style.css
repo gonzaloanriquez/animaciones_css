@@ -1,0 +1,57 @@
+/* button {
+    background-color: #0779fa;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-out;
+    border-radius: 5px;
+    transition-delay: 0.5s;
+    }
+    button:hover {
+    background-color: rgb(5, 1, 24);
+    border-radius: 15px; */
+    
+/* button {
+    background-color: #0077FF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 1s steps(7);
+    }
+    button:hover {
+    background-color: rgb(255, 140, 0);
+    } */
+.box {
+    width: 100px;
+    height: 100px;
+    background: url(https://th.bing.com/th/id/R.abb5e2f3a89fe5f1871d9e13555a4cfb?rik=Gw6033iUygmZPQ&riu=http%3a%2f%2fcdn.marketing4ecommerce.net%2fwp-content%2fuploads%2f2017%2f01%2f02204956%2fqu%c3%a9-es-una-imagen-vectorial.jpg&ehk=HTmTsIAUN71R1e1kAp3MB6q0dm57GQVLk2TwmRfmuds%3d&risl=&pid=ImgRaw&r=0);
+    background-size: cover;
+    transition: transform 3s;
+    /* La transformación rota y escala la caja */
+    }
+/* .texto{
+    transform: rotate(180deg);
+} */
+
+/* .box:hover{
+    transform: scale(2);
+} */
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    }
+    @keyframes example {
+    from { left: 0px; }
+    to { left: 200px; }
+    /* La animación moverá la caja de 0px a 200px a la izquierda */
+    }

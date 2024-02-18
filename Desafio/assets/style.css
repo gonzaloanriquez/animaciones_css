@@ -1,0 +1,152 @@
+.pie{
+    grid-area: pie;
+    background-color: antiquewhite;
+    min-width: 400px;
+    height: 100%;
+    width: 100%;
+}
+
+.principal{
+    grid-area: principal;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.grid{
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "filtros"
+    "principal"
+    "pie";
+    justify-items: center;
+}
+
+.barraNav{
+    grid-area: nav;
+    background-color: rgb(14, 14, 220);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.barraNav a{
+    color: white;
+    text-decoration: None;
+    padding: 10px;
+}
+
+.barraNav a:hover{
+    color: greenyellow;
+}
+
+.barraNav ul{
+    list-style-type: none;
+}
+
+.xx{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 250px;
+    border-radius: 5px;
+    border: 1px solid black;
+    justify-content: center;
+    filter: grayscale(0%);
+    transition: filter 1s ease; 
+    border-radius: 0%;
+}
+
+.xx:hover{
+    filter: grayscale(100%);
+}
+.gridprincipal{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 5px;
+
+}
+
+.xx .boton{
+    padding: 10px;
+    height: 40px;
+    width: 120px;
+    align-items: center;
+    background-color: blue; 
+    color: white; 
+    border-color: blue;
+    justify-content: center;
+}
+
+.derechos{
+    background-color: blue;
+    color: white;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    top: 50%;
+    place-content: center;
+}
+
+.pie-numeros{
+    display: flex;
+    align-items: stretch;
+    background-color: white;
+    justify-content: center;
+    padding: 10px;
+}
+.numero{
+    border: 1px solid gray;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+}
+
+
+@media (min-width: 576px){
+    .inicio{
+        display:inline;
+    }
+    .contacto{
+        display: inline;
+    }
+    .grid{
+        grid-template-columns: 1fr 4fr;
+        grid-template-areas: 
+        "nav nav"
+        "principal principal"
+        "pie pie";
+    }
+    .barraNav{
+            grid-area: nav;
+            background-color: blue;
+            /* color: white; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+    nav ul {
+        list-style-type: none;
+        /* color: white; */
+        }
+    nav li {
+        display: inline; 
+        /* color: white; */
+        }
+    .gridprincipal{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        }
+
+    }
+
+
+
